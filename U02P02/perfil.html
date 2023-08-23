@@ -11,73 +11,77 @@
     <h1>Perfil</h1>
 
     <div class="formulario-texto">
-        <form action="perfil.html" method="post" target="_self">
-            <h2>Información básica</h2>
-            <label for="nombre">Condición:</label>
-            <input type="text" id="condicion" name="condicion" value="ESTUDIANTE" readonly>
+        <fieldset>
+            <legend>Datos personales:</legend>
+            <form action="perfil.html" method="post" target="_self">
 
-            <br>
+                <label for="condicion">Condición:</label>
+                <input type="text" id="condicion" name="condicion" value="ESTUDIANTE" readonly>
 
-            <label for="nombre-apellido">Nombre y Apellido:</label>
-            <input type="text" id="nombre-apellido" name="nombre-apellido">
+                <br>
 
-            <br>
+                <label for="nombre-apellido">Nombre y Apellido:</label>
+                <input type="text" id="nombre-apellido" name="nombre-apellido">
 
-            <label for="mail">Correo electrónico:</label>
-            <input type="text" id="mail" name="mail">
+                <br>
 
-            <br>
+                <label for="mail">Correo electrónico:</label>
+                <input type="text" id="mail" name="mail">
 
-            <label for="edad">Edad:</label>
-            <input type="text" id="edad" name="edad">
+                <br>
 
-            <br>
+                <label for="edad">Edad:</label>
+                <input type="text" id="edad" name="edad">
 
-            <label for="nacionalidad">Nacionalidad:</label>
-            <select id="nacionalidad" name="nacionalidad">
-                <option value="" disabled selected></option>
-                <option value="argentina">Argentino</option>
-                <option value="extranjero">Extranjero</option>
-            </select>
+                <br>
 
-            <br>
+                <label for="nacionalidad">Nacionalidad:</label>
+                <select id="nacionalidad" name="nacionalidad">
+                    <option value="" disabled selected></option>
+                    <option value="argentina">Argentino</option>
+                    <option value="extranjero">Extranjero</option>
+                </select>
 
-            <label>Condicion laboral:</label>
-            <select id="laboral" name="laboral">
-                <option value="" disabled selected></option>
-                <option value="desempleado">Desempleado</option>
-                <option value="busqueda-laboral">En búsqueda laboral</option>
-                <option value="part-time">Trabajo part-time</option>
-                <option value="full-time">Trabajo full-time</option>
-            </select>
+                <br>
 
-            <br>
-
-            <h2>Gustos personales</h2>
+                <label>Condicion laboral:</label>
+                <select id="laboral" name="laboral">
+                    <option value="" disabled selected></option>
+                    <option value="desempleado">Desempleado</option>
+                    <option value="busqueda-laboral">En búsqueda laboral</option>
+                    <option value="part-time">Trabajo part-time</option>
+                    <option value="full-time">Trabajo full-time</option>
+                </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Gustos personales:</legend>
 
             <label for="gustos-musicales">Preferencias musicales::</label>
             <input type="text" id="gustos-musicales" name="gustos-musicales">
 
-            <br>
+        <br>
 
-            <label>Comida preferida:</label>
-            <select id="comida" name="comida">
-                <option value="" disabled selected></option>
-                <option value="asado">Asado</option>
-                <option value="pasta">Pasta</option>
-                <option value="dulces">Postres</option>
-            </select>
+        <label for="comida">Comidas preferidas:</label>
+        <select id="comida" name="comida">
+            <option value="" disabled selected></option>
+            <option value="asado">Asado</option>
+            <option value="pasta">Pasta</option>
+            <option value="dulces">Postres</option>
+        </select>
 
-            <br>
+        </fieldset>
 
-            <label for="recordar-datos">
-                <input type="checkbox" name="recordar" value="Guardado">
-                Recordar mis preferencias
-            </label>
+        <br>
 
-            <br>
+        <label for="recordar-datos">
+            <input type="checkbox" name="recordar" value="Guardado">
+            Recordar mis preferencias
+        </label>
 
-            <input type="submit" value="Enviar">
+        <br>
+
+        <input type="submit" value="Enviar">
         </form>
     </div>
 
