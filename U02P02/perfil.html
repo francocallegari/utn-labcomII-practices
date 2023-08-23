@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil</title>
+</head>
+
+<body>
+    <h1>Perfil</h1>
+
+    <div class="formulario-texto">
+        <form action="perfil.html" method="post" target="_self">
+            <h2>Información básica</h2>
+            <label for="nombre">Condición:</label>
+            <input type="text" id="condicion" name="condicion" value="ESTUDIANTE" readonly>
+
+            <br>
+
+            <label for="nombre-apellido">Nombre y Apellido:</label>
+            <input type="text" id="nombre-apellido" name="nombre-apellido">
+
+            <br>
+
+            <label for="mail">Correo electrónico:</label>
+            <input type="text" id="mail" name="mail">
+
+            <br>
+
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" name="edad">
+
+            <br>
+
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select id="nacionalidad" name="nacionalidad">
+                <option value="" disabled selected></option>
+                <option value="argentina">Argentino</option>
+                <option value="extranjero">Extranjero</option>
+            </select>
+
+            <br>
+
+            <label>Condicion laboral:</label>
+            <select id="laboral" name="laboral">
+                <option value="" disabled selected></option>
+                <option value="desempleado">Desempleado</option>
+                <option value="busqueda-laboral">En búsqueda laboral</option>
+                <option value="part-time">Trabajo part-time</option>
+                <option value="full-time">Trabajo full-time</option>
+            </select>
+
+            <br>
+
+            <h2>Gustos personales</h2>
+
+            <label for="gustos-musicales">Preferencias musicales::</label>
+            <input type="text" id="gustos-musicales" name="gustos-musicales">
+
+            <br>
+
+            <label>Comida preferida:</label>
+            <select id="comida" name="comida">
+                <option value="" disabled selected></option>
+                <option value="asado">Asado</option>
+                <option value="pasta">Pasta</option>
+                <option value="dulces">Postres</option>
+            </select>
+
+            <br>
+
+            <label for="recordar-datos">
+                <input type="checkbox" name="recordar" value="Guardado">
+                Recordar mis preferencias
+            </label>
+
+            <br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+
+</html>
